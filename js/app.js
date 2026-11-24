@@ -54,11 +54,17 @@
   function renderMenu() {
     const t = T[lang];
     const cat = MENU.find(c => c.id === activeCat);
-    const imgs = cat.images.map(src => `<img src="${src}" alt="" loading="lazy" width="800" height="600">`).join("");
-    const items = cat.items.map(it => {
+    const imgs = cat.images.map(([src, i]) => {
+      const it = cat.items[i];
+      return `<button class="dish-card" data-dish="${i}" aria-label="${it.name[lang]}">
+        <img src="${src}" alt="${it.name[lang]}" loading="lazy" width="800" height="600">
+        <span class="dish-card-cap"><span class="dc-name">${it.name[lang]}</span><span class="dc-price">${price(it.price)} <small>${t.currency}</small></span></span>
+      </button>`;
+    }).join("");
+    const items = cat.items.map((it, i) => {
       const alt = lang === "fa" ? it.name.en : it.name.fa;
       const desc = it.desc[lang] ? `<p class="dish-desc">${it.desc[lang]}</p>` : "";
-      return `<article class="dish">
+      return `<article class="dish" id="dish-${i}">
         <div class="dish-head">
           <h3>${it.name[lang]}</h3><span class="dots"></span>
           <span class="dish-price">${price(it.price)} <small>${t.currency}</small></span>
@@ -104,6 +110,14 @@
       const track = $("#stripTrack");
       const rtl = document.documentElement.dir === "rtl" ? -1 : 1;
       track.scrollBy({ left: +sn.dataset.strip * rtl * track.clientWidth * 0.9, behavior: "smooth" });
+      return;
+    }
+
+    const card = e.target.closest("[data-dish]");
+    if (card) {
+      const row = $(`#dish-${card.dataset.dish}`);
+      row.scrollIntoView({ behavior: "smooth", block: "center" });
+      row.classList.remove("flash"); void row.offsetWidth; row.classList.add("flash");
       return;
     }
 
