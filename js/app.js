@@ -54,7 +54,7 @@
   function renderMenu() {
     const t = T[lang];
     const cat = MENU.find(c => c.id === activeCat);
-    const imgs = cat.images.map(src => `<img src="${src}" alt="" loading="lazy">`).join("");
+    const imgs = cat.images.map(src => `<img src="${src}" alt="" loading="lazy" width="800" height="600">`).join("");
     const items = cat.items.map(it => {
       const alt = lang === "fa" ? it.name.en : it.name.fa;
       const desc = it.desc[lang] ? `<p class="dish-desc">${it.desc[lang]}</p>` : "";
@@ -68,9 +68,25 @@
       </article>`;
     }).join("");
     $("#menuPanel").innerHTML =
-      `<div class="menu-strip n${cat.images.length}">${imgs}</div>
+      `<div class="menu-strip">
+         <button class="strip-nav prev" data-strip="-1" aria-label="Previous">‹</button>
+         <div class="strip-track" id="stripTrack">${imgs}</div>
+         <button class="strip-nav next" data-strip="1" aria-label="Next">›</button>
+       </div>
        <h3 class="cat-title">${cat.title[lang]}</h3>
        <div class="dishes">${items}</div>`;
+    const track = $("#stripTrack");
+    track.addEventListener("scroll", updateStripNav, { passive: true });
+    requestAnimationFrame(updateStripNav);
+  }
+
+  function updateStripNav() {
+    const track = $("#stripTrack");
+    if (!track) return;
+    const max = track.scrollWidth - track.clientWidth;
+    const pos = Math.abs(track.scrollLeft); // RTL reports negative values
+    $(".strip-nav.prev").hidden = pos < 4;
+    $(".strip-nav.next").hidden = pos > max - 4;
   }
 
   function renderGallery() {
@@ -82,6 +98,14 @@
   document.addEventListener("click", e => {
     const l = e.target.closest("#langs [data-lang]");
     if (l) return setLang(l.dataset.lang);
+
+    const sn = e.target.closest("[data-strip]");
+    if (sn) {
+      const track = $("#stripTrack");
+      const rtl = document.documentElement.dir === "rtl" ? -1 : 1;
+      track.scrollBy({ left: +sn.dataset.strip * rtl * track.clientWidth * 0.9, behavior: "smooth" });
+      return;
+    }
 
     const c = e.target.closest("[data-cat]");
     if (c) {
