@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="hy">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coochini Restaurant · Քուչինի · Yerevan</title>
+  <meta name="description" content="Coochini — authentic Iranian restaurant with live music at Abovyan 26, Yerevan. Kebabs, Persian stews, saffron rice. Book a table: +374 44 200 620.">
+  <meta property="og:title" content="Coochini Restaurant — Yerevan">
+  <meta property="og:description" content="Authentic Iranian cuisine & live music · Abovyan 26, Yerevan">
+  <meta property="og:image" content="img/interior/hall-1.jpg">
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Sans+Armenian:wght@400;500;600&family=Noto+Serif+Armenian:wght@500;600;700&family=Inter:wght@400;500;600&family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+
+<header class="topbar" id="top">
+  <a href="#top" class="brand" aria-label="Coochini">
+    <img src="img/logo.png" alt="Coochini logo" width="48" height="48">
+    <span class="brand-name">COOCHINI</span>
+  </a>
+  <nav class="nav" id="nav">
+    <a href="#story" data-nav="0"></a>
+    <a href="#menu" data-nav="1"></a>
+    <a href="#music" data-nav="2"></a>
+    <a href="#gallery" data-nav="3"></a>
+    <a href="#visit" data-nav="4"></a>
+  </nav>
+  <div class="top-actions">
+    <div class="langs" id="langs" role="group" aria-label="Language"></div>
+    <a class="btn btn-gold btn-sm hide-sm" href="tel:+37444200620" data-t="reserve"></a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('img/interior/hall-1.jpg')"></div>
+  <div class="hero-inner">
+    <img class="hero-logo" src="img/logo.png" alt="Coochini Restaurant — Քուչինի" width="260" height="260">
+    <p class="hero-tag" data-t="tagline"></p>
+    <h1 class="hero-sub" data-t="heroSub"></h1>
+    <div class="hero-cta">
+      <a class="btn btn-gold" href="tel:+37444200620"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z"/></svg><span data-t="reserve"></span></a>
+      <a class="btn btn-ghost" href="#menu" data-t="viewMenu"></a>
+    </div>
+  </div>
+  <a href="#story" class="scroll-hint" aria-hidden="true"></a>
+</section>
+
+<section class="story section" id="story">
+  <div class="wrap story-grid">
+    <div class="story-photo">
+      <img src="img/interior/hall-7.jpg" alt="" loading="lazy">
+      <div class="badge"><strong>25+</strong><span data-t="years"></span></div>
+    </div>
+    <div class="story-text">
+      <p class="kicker" data-t="storyKicker"></p>
+      <h2 data-t="storyTitle"></h2>
+      <div class="ornament" aria-hidden="true">✦</div>
+      <div id="storyBody"></div>
+    </div>
+  </div>
+</section>
+
+<section class="menu section" id="menu">
+  <div class="wrap">
+    <div class="head-center">
+      <p class="kicker" data-t="menuKicker"></p>
+      <h2 data-t="menuTitle"></h2>
+      <div class="ornament" aria-hidden="true">✦</div>
+    </div>
+    <div class="tabs" id="tabs" role="tablist"></div>
+    <div id="menuPanel" class="menu-panel"></div>
+  </div>
+</section>
+
+<section class="music section" id="music">
+  <div class="music-bg" style="background-image:url('img/interior/hall-6.jpg')"></div>
+  <div class="wrap music-inner">
+    <p class="kicker" data-t="musicKicker"></p>
+    <h2 data-t="musicTitle"></h2>
+    <div class="ornament" aria-hidden="true">♪</div>
+    <p class="music-text" data-t="musicText"></p>
+    <a class="btn btn-gold" href="tel:+37444200620" data-t="musicCta"></a>
+  </div>
+</section>
+
+<section class="gallery section" id="gallery">
+  <div class="wrap">
+    <div class="head-center">
+      <p class="kicker" data-t="galleryKicker"></p>
+      <h2 data-t="galleryTitle"></h2>
+      <div class="ornament" aria-hidden="true">✦</div>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<section class="visit section" id="visit">
+  <div class="wrap visit-grid">
+    <div class="visit-info">
+      <p class="kicker" data-t="visitKicker"></p>
+      <h2 data-t="visitTitle"></h2>
+      <div class="ornament left" aria-hidden="true">✦</div>
+
+      <div class="info-row">
+        <h3 data-t="address"></h3>
+        <p data-t="addressText"></p>
+      </div>
+      <div class="info-row">
+        <h3 data-t="phone"></h3>
+        <p class="phones" dir="ltr">
+          <a href="tel:+37444200620">+374 44 200 620</a>
+          <a href="tel:+37493300440">+374 93 300 440</a>
+        </p>
+        <p class="note" data-t="bookNote"></p>
+      </div>
+      <div class="info-row">
+        <h3 data-t="follow"></h3>
+        <a class="insta" href="https://www.instagram.com/coochini.am/" target="_blank" rel="noopener" dir="ltr">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM21.9 7.1c-.1-1.6-.4-3-1.6-4.2S17.6 1.3 16 1.2C14.3 1.1 9.7 1.1 8 1.2c-1.6.1-3 .4-4.2 1.6S2.2 5.5 2.1 7.1C2 8.8 2 13.4 2.1 15.1c.1 1.6.4 3 1.6 4.2s2.6 1.5 4.2 1.6c1.7.1 6.3.1 8 0 1.6-.1 3-.4 4.2-1.6s1.5-2.6 1.6-4.2c.1-1.7.1-6.3 0-8zM19.7 17a3.3 3.3 0 0 1-1.8 1.8c-1.3.5-4.3.4-5.9.4s-4.6.1-5.9-.4A3.3 3.3 0 0 1 4.3 17c-.5-1.3-.4-4.3-.4-5.9s-.1-4.6.4-5.9A3.3 3.3 0 0 1 6.1 3.4c1.3-.5 4.3-.4 5.9-.4s4.6-.1 5.9.4a3.3 3.3 0 0 1 1.8 1.8c.5 1.3.4 4.3.4 5.9s.1 4.6-.4 5.9z"/></svg>
+          @coochini.am
+        </a>
+      </div>
+      <a class="btn btn-gold" href="tel:+37444200620" data-t="reserve"></a>
+    </div>
+    <div class="map">
+      <iframe title="Map — Abovyan 26, Yerevan" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=Abovyan%2026%2C%20Yerevan%2C%20Armenia&z=16&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <img src="img/logo.png" alt="" width="70" height="70">
+  <p data-t="footer"></p>
+  <p class="small" dir="ltr">© <span id="year"></span> Coochini · Abovyan 26, Yerevan</p>
+</footer>
+
+<a class="call-fab" href="tel:+37444200620" aria-label="Call">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z"/></svg>
+  <span data-t="reserve"></span>
+</a>
+
+<div class="lightbox" id="lightbox" hidden><button aria-label="Close">×</button><img alt=""></div>
+
+<script src="js/data.js?v=2"></script>
+<script src="js/app.js?v=2"></script>
+</body>
+</html>
