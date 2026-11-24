@@ -108,8 +108,8 @@ body[data-lang="fa"] .story-text p { line-height: 2; }
 .menu-strip.n1 { grid-template-columns: 1fr; }
 .menu-strip.n2 { grid-template-columns: 1fr 1fr; }
 .menu-strip.n3 { grid-template-columns: repeat(3, 1fr); }
-.menu-strip img { width: 100%; height: 260px; object-fit: cover; border-radius: var(--radius); border: 1px solid rgba(240,201,119,.25); }
-.menu-strip.n1 img { height: 320px; object-position: center 35%; }
+.menu-strip img { width: 100%; height: 260px; object-fit: cover; object-position: 62% 50%; border-radius: var(--radius); border: 1px solid rgba(240,201,119,.25); }
+.menu-strip.n1 img { height: 320px; }
 .cat-title { text-align: center; color: var(--gold-2); font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 26px; }
 .dishes { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 56px; }
 .dish { padding: 16px 0; border-bottom: 1px dashed rgba(240,201,119,.18); }

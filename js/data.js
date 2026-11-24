@@ -18,7 +18,7 @@ const MENU = [
   {
     id: "kebabs",
     title: { en: "Kebabs & Grills", hy: "Քյաբաբներ և խորոված", ru: "Кебабы и гриль", fa: "کباب‌ها و گریل" },
-    images: ["img/food/page-3.jpg", "img/food/page-4.jpg", "img/food/page-5.jpg"],
+    images: ["img/food/kebabs-1.jpg", "img/food/kebabs-2.jpg", "img/food/kebabs-3.jpg"],
     items: [
       I(4500, "کباب کوبیده | Kebab Koobideh | Քյաբաբ Կուբիդե | Кебаб кубиде",
         "2 skewers, 240 g — minced beef and lamb | 2 շիշ, 240 գ — աղացած տավարի և գառան միս | 2 шампура, 240 г — рубленая говядина и баранина | ۲ سیخ، ۲۴۰ گرم — گوشت چرخ‌کرده گوساله و بره"),
@@ -41,7 +41,7 @@ const MENU = [
   {
     id: "mix",
     title: { en: "Mixed Kebabs", hy: "Խառը քյաբաբներ", ru: "Ассорти кебабов", fa: "میکس کباب" },
-    images: ["img/food/page-6.jpg"],
+    images: ["img/food/mix-1.jpg", "img/food/mix-2.jpg"],
     items: [
       I(6500, "میکس کباب (یک نفره) | Mixed Kebab — for one | Խառը քյաբաբ (1 անձի) | Ассорти — на одного",
         "Saffron chicken 150 g, minced beef & lamb 120 g, yogurt-marinated beef fillet 100 g | Հավ զաֆրանով 150 գ, աղացած միս 120 գ, մածունով մսի ֆիլե 100 գ | Курица с шафраном 150 г, рубленое мясо 120 г, вырезка в йогурте 100 г | جوجه زعفرانی ۱۵۰ گرم، کوبیده ۱۲۰ گرم، فیله ماستی ۱۰۰ گرم"),
@@ -56,7 +56,7 @@ const MENU = [
   {
     id: "iranian",
     title: { en: "Iranian Classics", hy: "Իրանական ուտեստներ", ru: "Иранская кухня", fa: "غذاهای ایرانی" },
-    images: ["img/food/page-7.jpg", "img/food/page-8.jpg"],
+    images: ["img/food/iranian-1.jpg", "img/food/iranian-2.jpg"],
     items: [
       I(4500, "زرشک پلو با مرغ | Zereshk Polo with Chicken | Զերեշք փոլո հավով | Зерешк поло с курицей",
         "Bone-in chicken braised in tomato sauce, saffron rice with barberries | Ոսկորով հավ՝ շոգեխաշած լոլիկի սոուսով, բրինձ զաֆրանով և ծորենով | Курица на кости, тушённая в томатном соусе, рис с шафраном и барбарисом | مرغ با سس گوجه، پلو زعفرانی با زرشک"),
@@ -79,7 +79,7 @@ const MENU = [
   {
     id: "appetizers",
     title: { en: "Starters, Salads & Sides", hy: "Նախուտեստներ և աղցաններ", ru: "Закуски и салаты", fa: "پیش‌غذا و سالاد" },
-    images: ["img/food/page-9.jpg", "img/food/page-10.jpg", "img/food/page-11.jpg"],
+    images: ["img/food/appetizers-1.jpg", "img/food/appetizers-2.jpg", "img/food/appetizers-3.jpg"],
     items: [
       I(1300, "سوپ روز | Soup of the Day | Օրվա ապուր | Суп дня",
         "Barley soup with vermicelli, carrot, parsley and tomato | Գարու ապուր վերմիշելով, գազարով, մաղադանոսով և լոլիկով | Ячменный суп с вермишелью, морковью, петрушкой и томатом | سوپ جو با رشته، هویج، جعفری و گوجه"),
@@ -115,7 +115,7 @@ const MENU = [
   {
     id: "seafood",
     title: { en: "Fish & Seafood", hy: "Ձուկ և ծովամթերք", ru: "Рыба и морепродукты", fa: "ماهی و دریایی" },
-    images: ["img/food/page-12.jpg"],
+    images: ["img/food/seafood-1.jpg", "img/food/seafood-2.jpg"],
     items: [
       I(7000, "ماهی استرلت | Sterlet | Ստեռլետ ձուկ | Стерлядь",
         "Boneless, grilled kebab-style | Առանց ոսկորի, քյաբաբ | Без костей, на гриле | بدون استخوان، کبابی"),
@@ -128,7 +128,7 @@ const MENU = [
   {
     id: "rice",
     title: { en: "Rice", hy: "Բրնձով ուտեստներ", ru: "Рис", fa: "پلو" },
-    images: ["img/food/page-13.jpg"],
+    images: ["img/food/rice-1.jpg", "img/food/rice-2.jpg"],
     items: [
       I(1500, "چلو زعفرانی | Saffron Chelo | Զաֆրանով բրինձ | Рис с шафраном",
         "Steamed white rice with saffron | Սպիտակ բրինձ զաֆրանով | Белый рис с шафраном | چلو سفید با زعفران"),
@@ -141,7 +141,7 @@ const MENU = [
   {
     id: "pizza",
     title: { en: "Pizza", hy: "Պիցցա", ru: "Пицца", fa: "پیتزا" },
-    images: ["img/food/page-14.jpg"],
+    images: ["img/food/pizza-1.jpg", "img/food/pizza-2.jpg"],
     items: [
       I(3500, "میکس | Mix | Միքս | Микс",
         "Sausage, ham, cheese, mushrooms, corn, bell pepper, tomato, olives, oregano | Երշիկ, խոզապուխտ, պանիր, սունկ, եգիպտացորեն, բուլղարական պղպեղ, լոլիկ, ձիթապտուղ, ուրց | Колбаса, ветчина, сыр, грибы, кукуруза, болгарский перец, томат, оливки, орегано | سوسیس، ژامبون، پنیر، قارچ، ذرت، فلفل دلمه‌ای، گوجه، زیتون، پونه"),
@@ -154,7 +154,7 @@ const MENU = [
   {
     id: "chicken",
     title: { en: "Fried Chicken", hy: "Տապակած հավ", ru: "Жареная курица", fa: "سوخاری" },
-    images: ["img/food/page-15.jpg"],
+    images: ["img/food/chicken-1.jpg", "img/food/chicken-2.jpg"],
     items: [
       I(2500, "فیله سوخاری | Crispy Chicken Fillet | Տապակած ֆիլե | Куриное филе в панировке", "|||"),
       I(2000, "بال و کتف ۸ عدد | Wings — 8 pcs | Թևիկներ — 8 հատ | Крылышки — 8 шт", "|||")
